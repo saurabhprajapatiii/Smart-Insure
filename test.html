@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title></title>
+		
+		<script language="javascript" type="text/javascript" src="test.js">
+		</script>
+
+		<script type="text/javascript">
+			
+
+			function calculate()
+{
+	var qty = document.getElementById("qty0").value;
+	var value = document.getElementById("value0").value;
+	
+	var result =  value * qty;
+		
+	document.getElementById("result").innerHTML = result;	
+}
+
+function calculateNext()
+{
+	var qty = document.getElementById("qty1").value;
+	var value = document.getElementById("value1").value;
+	
+	var result1 =  value * qty;
+		
+	document.getElementById("result1").innerHTML = result1;	
+}
+
+function calculateFirst()
+{
+	var qty = document.getElementById("qty2").value;
+	var value = document.getElementById("value2").value;
+	
+	var result2=  value * qty;
+		
+	document.getElementById("result2").innerHTML = result2;
+}
+
+		</script>
+
+
+	</head>
+<body>
+<form>
+<p>
+	 Your order: <span id="result"></span><br /><br />
+	 Your order: <span id="result1"></span><br /><br />
+	 Your order: <span id="result2"></span><br /><br />
+	 
+	 Total: <span id="total"></span><br /><br />
+	 
+	Price: 10<input type="hidden" id="value0" value="10"/>
+	Quantity:<input type="text" id="qty0" size="2" value=""/>	
+	<input type="button" onclick="calculate();" value="Add"/>
+	<br/>
+	Price: 20<input type="hidden" id="value1" value="20"/>
+	Quantity:<input type="text" id="qty1"  size="2" value=""/>	
+	<input type="button" onclick="calculateNext();" value="Add"/>	
+	<br/>
+	Price: 30<input type="hidden" id="value2" value="30"/>
+	Quantity:<input type="text" id="qty2" size="2" value=""/>	
+	<input type="button" onclick="calculateFirst();" value="Add"/>
+
+</form>    				
+    			
+</body>
+</html>
