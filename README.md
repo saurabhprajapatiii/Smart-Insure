@@ -59,7 +59,7 @@ $db   = "insurance";
 
 5.  Access in Browser
    http://localhost/insurance/
-
+---
 
 📌 Future Enhancements
 🔐 OTP & Email Verification
